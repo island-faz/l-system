@@ -119,8 +119,8 @@ def l_system(draw, axiom, arr_rules, depth, _angle, _origine, _len):
 	print("Expression ready")
 	draw_exp(draw, turtle, exp, _angle, _len)
 
-W = 15000
-H = 15000
+W = 5000
+H = 5000
 
 o = Point(W/2, H)
 
@@ -134,7 +134,7 @@ rule1 = Rule("F", "FF+F-F+F+FF")
 
 rules.append(rule1)
 #rules.append(rule2)
-angle = 60 * math.pi / 180
+angle = 90 * math.pi / 180
 
 l_system(draw, axiom, rules, 5, angle, Point(W/2, H/2), 40)
 
